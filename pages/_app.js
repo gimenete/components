@@ -3,6 +3,7 @@ import App, {Container} from 'next/app'
 import Head from 'next/head'
 import getConfig from 'next/config'
 import {Layout} from 'mdx-docs'
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import Octicon, {iconsByName, Pencil} from '@githubprimer/octicons-react'
 import * as docComponents from './doc-components'
 import Index from './index.mdx'
@@ -25,6 +26,10 @@ const components = {
   ...iconComponents,
   ...docComponents,
   ...primerComponents,
+  Tab,
+  Tabs,
+  TabList,
+  TabPanel,
   Octicon,
   // render links with our component
   a: DocLink
